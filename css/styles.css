@@ -1,4 +1,4 @@
-root {
+:root {
   --main-color-background: #2f303a;
   --accent-color: #2196f3;
   --btn-active-color: #188ce8;
@@ -21,8 +21,6 @@ root {
   font-size: var(--main-font-size);
 }
 .header {
-  width: 1600px;
-  height: 80px;
   background-color: var(--white-color);
   display: flex;
   flex-wrap: wrap;
@@ -32,16 +30,15 @@ root {
   color: inherit;
 }
 .logo {
-  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   color: var(--black-color);
   letter-spacing: 0.03em;
+  font-family: var(--logo-font);
 }
 .logo-wrap {
   color: var(--accent-color);
-  font: "Raleway", sans-serif;
 }
 .list {
   display: flex;
@@ -58,32 +55,47 @@ root {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.link-nav:hover,
-.link-nav:focus {
+.main-nav:hover,
+.main-nav:focus {
   color: var(--accent-color);
 }
 .current {
   color: var(--accent-color);
 }
 .link-contact {
-  line-height: 1.7;
-  letter-spacing: 0.02em;
-  color: rgba(255, 255, 255, 0.6);
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--secondary-color-font);
+}
+.link-contact:focus,
+.link-contact:hover {
+  color: var(--accent-color);
+}
+.title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+text-align: center;
+text-transform: uppercase;
+color: var(--white-color);
 }
 .btn-service {
-  position: absolute;
+  border: none;
   font-family: var(--main-font);
   font-size: var(--secondary-font-size);
-  line-height: 1.875;
+  line-height: calc(30 / 16);
   letter-spacing: 0.06em;
-  border: none;
   background-color: var(--accent-color);
   color: var(--white-color);
   font-weight: 700;
   text-align: center;
-  display: flex;
   align-items: center;
+  display: flex;
   cursor: pointer;
+  margin: 0 auto;
+
 }
 .btn-service:focus,
 .btn-service:hover {
@@ -108,16 +120,11 @@ root {
   letter-spacing: 0.03em;
   color: var(--secondary-color-font);
 }
-.title {
-  width: 696px;
-  height: 120px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--white-color);
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -131,7 +138,7 @@ root {
 .team-member-name {
   font-weight: 500;
   font-size: var(--secondary-font-size);
-  line-height: 1.1875;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -142,16 +149,12 @@ root {
   text-align: center;
   letter-spacing: 0.03em;
 }
-.footer {
-  font-style: normal;
-  background-color: var(--main-color-background);
-  width: 1600px;
-  height: 600px;
-}
+
 .logo-wrap-footer {
   color: var(--white-color);
 }
 .address {
+  font-style: normal;
   line-height: 1.7;
   letter-spacing: 0.02em;
   color: var(--white-color);
@@ -160,4 +163,47 @@ root {
 .address:hover {
   color: var(--accent-color);
   cursor: pointer;
+}
+
+.link-contact-footer {
+  font-style: normal;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.link-contact-footer:focus,
+.link-contact-footer:hover {
+  color: var(--accent-color);
+  cursor:pointer;
+}
+
+.btn-projects {
+  border: none;
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: var(--secondary-font-size);
+  line-height: calc(26 / 16);
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+}
+.btn-projects:focus,
+.btn-projects:hover {
+  background-color: var(--accent-color);
+  color: var(--white-color);
+}
+
+.title-project {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  color: var(--main-color-font);
+  letter-spacing: 0.06em;
+}
+
+.type-project {
+  font-size: var(--secondary-font-size);
+  line-height: calc(30 / 16);
+  letter-spacing: 0.03em;
+  color: var(--secondary-color-font);
 }
