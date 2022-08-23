@@ -32,7 +32,7 @@
 .logo {
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: calc(31 / 26);
   color: var(--black-color);
   letter-spacing: 0.03em;
   font-family: var(--logo-font);
@@ -52,7 +52,7 @@
 
 .main-nav {
   font-weight: 500;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 }
 .main-nav:hover,
@@ -64,7 +64,7 @@
 }
 .link-contact {
 font-weight: 500;
-line-height: 1.14;
+line-height: calc(16 / 14);
 letter-spacing: 0.02em;
 color: var(--secondary-color-font);
 }
@@ -75,7 +75,7 @@ color: var(--secondary-color-font);
 .title {
 font-weight: 900;
 font-size: 44px;
-line-height: 1.36;
+line-height: calc(60 / 44);
 letter-spacing: 0.06em;
 text-align: center;
 text-transform: uppercase;
@@ -111,12 +111,12 @@ color: var(--white-color);
 .subtitle-feature {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.14;
+  line-height: calc(16 / 14);
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 .description-feature {
-  line-height: 1.7;
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--secondary-color-font);
 }
@@ -128,24 +128,17 @@ color: var(--white-color);
   text-align: center;
 }
 
-.team {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-align: center;
-}
 .team-member-name {
   font-weight: 500;
   font-size: var(--secondary-font-size);
-  line-height: 1.2;
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
 }
 .job-position {
   color: var(--secondary-color-font);
   font-size: var(--secondary-font-size);
-  line-height: 1.875;
+  line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -155,26 +148,24 @@ color: var(--white-color);
 }
 .address {
   font-style: normal;
-  line-height: 1.7;
+  line-height: calc(24 / 14);
   letter-spacing: 0.02em;
   color: var(--white-color);
 }
 .address:focus,
 .address:hover {
   color: var(--accent-color);
-  cursor: pointer;
 }
 
 .link-contact-footer {
   font-style: normal;
-  line-height: 1.7;
+  line-height: calc(24 / 14);
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.6);
 }
 .link-contact-footer:focus,
 .link-contact-footer:hover {
   color: var(--accent-color);
-  cursor:pointer;
 }
 
 .btn-projects {
@@ -196,7 +187,7 @@ color: var(--white-color);
 .title-project {
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
+  line-height: calc(36 / 18);
   color: var(--main-color-font);
   letter-spacing: 0.06em;
 }
