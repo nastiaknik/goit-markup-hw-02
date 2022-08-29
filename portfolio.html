@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!--Favicon-->
+    <!--Favicon-->
     <link
       rel="apple-touch-icon"
       sizes="120x120"
@@ -32,16 +32,20 @@
     <meta name="theme-color" content="#ffffff" />
     <!--Favicon ends-->
     <title>WebStudio</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body class="page">
-    <header>
+  <body>
+    <header class="header">
       <nav>
         <a class="link logo" href="./index.html" lang="en"
           ><span class="logo-wrap">Web</span>Studio</a
@@ -56,7 +60,7 @@
             >
           </li>
           <li class="list-item main-nav">
-            <a class="link" href="#">Контакти</a>
+            <a class="link link-contact" href="#">Контакти</a>
           </li>
         </ul>
       </nav>
@@ -75,7 +79,7 @@
     </header>
     <main>
       <section>
-        <h1 hidden>Наші проєкти</h1>
+        <h1 class="visually-hidden">Наші проєкти</h1>
         <ul class="list">
           <li><button class="btn-projects" type="button">Все</button></li>
           <li>
@@ -183,7 +187,7 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="footer">
       <a class="link logo" href="./index.html" lang="en"
         ><span class="logo-wrap">Web</span
         ><span class="logo-wrap-footer">Studio</span></a

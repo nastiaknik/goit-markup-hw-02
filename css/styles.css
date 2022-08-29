@@ -15,7 +15,7 @@
   --secondary-font-size: 16px;
 }
 
-.page {
+body {
   font-family: var(--main-font);
   color: var(--main-color-font);
   font-size: var(--main-font-size);
@@ -23,7 +23,6 @@
 .header {
   background-color: var(--white-color);
   display: flex;
-  flex-wrap: wrap;
 }
 .link {
   text-decoration: none;
@@ -63,23 +62,26 @@
   color: var(--accent-color);
 }
 .link-contact {
-font-weight: 500;
-line-height: calc(16 / 14);
-letter-spacing: 0.02em;
-color: var(--secondary-color-font);
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  color: var(--secondary-color-font);
 }
 .link-contact:focus,
 .link-contact:hover {
   color: var(--accent-color);
 }
+.hero-section {
+  background-color: var(--main-color-background);
+}
 .title {
-font-weight: 900;
-font-size: 44px;
-line-height: calc(60 / 44);
-letter-spacing: 0.06em;
-text-align: center;
-text-transform: uppercase;
-color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--white-color);
 }
 .btn-service {
   border: none;
@@ -95,7 +97,6 @@ color: var(--white-color);
   display: flex;
   cursor: pointer;
   margin: 0 auto;
-
 }
 .btn-service:focus,
 .btn-service:hover {
@@ -120,6 +121,9 @@ color: var(--white-color);
   letter-spacing: 0.03em;
   color: var(--secondary-color-font);
 }
+.team-section {
+  background-color: var(--grey-background-color);
+}
 .section-title {
   font-weight: 700;
   font-size: 36px;
@@ -141,6 +145,9 @@ color: var(--white-color);
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+}
+.footer {
+  background-color: var(--main-color-background);
 }
 
 .logo-wrap-footer {
